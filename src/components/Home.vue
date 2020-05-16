@@ -14,6 +14,7 @@
       <el-aside :width="isCollapse ? '64px' : '200px'">
         <div class="toggle-btn" @click="toggleCollapse">|||</div>
         <!-- 侧边栏菜单栏 -->
+        <!-- 通过router 属性开启原生router-link 路由模式-->
         <el-menu
           background-color="#333744"
           text-color="#fff"
@@ -21,7 +22,7 @@
           unique-opened
           :collapse="isCollapse"
           :collapse-transition="false"
-          router
+          router 
           :default-active="activePath"
         >
           <!-- 一级菜单 -->

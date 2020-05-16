@@ -26,3 +26,7 @@ body,
 .el-pagination{
   margin-top: 15px;
 }
+/* Cascader无滚动条样式全部显示超出屏幕解决办法 */
+.el-cascader-panel{
+  height: 200px;
+}
