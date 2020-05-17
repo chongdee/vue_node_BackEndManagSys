@@ -8,6 +8,7 @@ const Users = () => import("components/user/Users");
 const Rights = () => import("components/rights/Rights");
 const Roles = () => import("components/rights/Roles");
 const Category = () => import("components/goods/Category");
+const Params = () => import("components/goods/Params");
 
 
 Vue.use(VueRouter);
@@ -52,6 +53,11 @@ const routes = [
         name: "Category",
         path: "/categories",
         component: Category
+      },
+      {
+        name: "Params",
+        path: "/params",
+        component: Params
       }
     ]
   }
