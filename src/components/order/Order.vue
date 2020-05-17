@@ -73,7 +73,6 @@
       title="修改地址"
       :visible.sync="AddressDialogVisible"
       width="50%"
-      @close="addressClosed"
     >
       <!-- 表单 -->
       <el-form
@@ -102,14 +101,9 @@
     </el-dialog>
 
     <!-- 展示物流进度对话框 -->
-    <el-dialog
-      title="物流进度"
-      :visible.sync="progressVisible"
-      width="50%"
-      @close="progressClosed"
-    >
-    <!-- 时间线 -->
-      <el-timeline :reverse="reverse">
+    <el-dialog title="物流进度" :visible.sync="progressVisible" width="50%">
+      <!-- 时间线 -->
+      <el-timeline>
         <el-timeline-item
           v-for="(activity, index) in progressInfo"
           :key="index"
